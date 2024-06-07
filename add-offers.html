@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>add-offers</title>
+    <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/select2.min.css" />
+    <link rel="stylesheet" href="css/flatpickr.css" />
+    <!-- this is not a global file -->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+<body class="">
+
+    <!--============================== start header ===========================-->
+
+
+    <div class="sidebar-menu accordion" id="accordionExample">
+        <i class="fal fa-times-circle close-ic"></i>
+        <ul class="sidebar-anchors">
+            <p class="sidebar-hint">عام</p>
+            <li class="item">
+                <a href="index.html" class="box-item">
+                    <div class="hint-img">
+                        <img src="img/home-img.png" alt="home-img" class="img-1">
+                    </div>
+                    <span class="hint">
+                        الرئيسية
+                    </span>
+                </a>
+                <i class="far fa-angle-left sb-icon"></i>
+            </li>
+
+            <li class="item without-anchor">
+                <div class="box-item" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false">
+                    
+                    <div class="hint-img">
+                        <img src="img/order-img.png" alt="order-img" class="img-1">
+                    </div>
+                    <span class="hint">
+                        الطلبات
+                    </span>
+                    <i class="far fa-angle-left sb-icon"></i>
+                </div>
+                <ul id="collapse-1" class="sub-list-menu collapse" data-parent="#accordionExample">
+                    <li class="sub-item"><a href="orders.html" class="list-anchor">
+                            <p class="sub-text">طلبات جديدة</p>
+                        </a>
+                    </li>
+                    <li class="sub-item"><a href="orders.html" class="list-anchor">
+                            <p class="sub-text">طلبات حالية</p>
+                        </a>
+                    </li>
+                    <li class="sub-item"><a href="orders.html" class="list-anchor">
+                            <p class="sub-text">طلبات منتهية</p>
+                        </a>
+                    </li>
+                    <li class="sub-item"><a href="orders.html" class="list-anchor">
+                            <p class="sub-text">طلبات ملغية / مرفوضة</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <p class="sidebar-hint">خدماتي</p>
+
+            <li class="item">
+                <a href="services.html" class="box-item">
+                    <div class="hint-img">
+                        <img src="img/service-img.png" alt="service-img" class="img-1">
+                    </div>
+                    <span class="hint">
+                        الخدمات
+                    </span>
+                </a>
+                <i class="far fa-angle-left sb-icon"></i>
+            </li>
+
+            <li class="item">
+                <a href="offers.html" class="box-item">
+                    <div class="hint-img">
+                        <img src="img/offers-img.png" alt="offers-img" class="img-1">
+                    </div>
+                    <span class="hint">
+                        العروض الخاصة
+                    </span>
+                </a>
+                <i class="far fa-angle-left sb-icon"></i>
+            </li>
+
+            <li class="item">
+                <a href="storys.html" class="box-item">
+                    <div class="hint-img">
+                        <img src="img/story-img.png" alt="offers-img" class="img-1">
+                    </div>
+                    <span class="hint">
+                        قصص المركز
+                    </span>
+                </a>
+                <i class="far fa-angle-left sb-icon"></i>
+            </li>
+
+            <li class="item">
+                <a href="employees.html" class="box-item">
+                    <div class="hint-img">
+                        <img src="img/employee-img.png" alt="users-img" class="img-1">
+                    </div>
+                    <span class="hint">
+                        الموظفين / الأطباء
+                    </span>
+                </a>
+                <i class="far fa-angle-left sb-icon"></i>
+            </li>
+
+            <p class="sidebar-hint">المالية</p>
+
+            <li class="item without-anchor">
+                <div class="box-item" data-toggle="collapse" data-target="#collapse-2" aria-expanded="false">
+                    
+                    <div class="hint-img">
+                        <img src="img/receipt-img.png" alt="" class="side-img">
+                    </div>
+                    <span class="hint">
+                        الحسابات المالية
+                    </span>
+                    <i class="far fa-angle-left sb-icon"></i>
+                </div>
+                <ul id="collapse-2" class="sub-list-menu collapse" data-parent="#accordionExample">
+                    <li class="sub-item"><a href="transactions.html" class="list-anchor">
+                            <p class="sub-text">المعاملات</p>
+                        </a>
+                    </li>
+                    <li class="sub-item"><a href="" class="list-anchor">
+                            <p class="sub-text">طلبات تسوية جديدة</p>
+                        </a>
+                    </li>
+                    <li class="sub-item"><a href="" class="list-anchor">
+                            <p class="sub-text">طلبات تسوية منتهية</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            
+            <p class="sidebar-hint">معلومات</p>
+            <li class="item">
+                <a href="terms-and-conditions.html" class="box-item">
+                    <div class="hint-img">
+                        <img src="img/monitor-img.png" alt="" class="img-1">
+                    </div>
+                    <span class="hint">
+                        الشروط والاحكام
+                    </span>
+                </a>
+                <i class="far fa-angle-left sb-icon"></i>
+            </li>
+            <li class="item">
+                <a href="contact-us.html" class="box-item">
+                    <div class="hint-img">
+                        <img src="img/calling-img.png" alt="" class="img-1">
+                    </div>
+                    <span class="hint">
+                        تواصل معنا
+                    </span>
+                </a>
+                <i class="far fa-angle-left sb-icon"></i>
+            </li>
+        </ul>
+    </div>
+
+
+    <!--============================ end-header ================================-->
+
+    <!-- ============================ start content ========================== -->
+    <section class="content with-mrg">
+
+        <div class="top-nav">
+            <div class="container">
+                <div class="main-nav">
+
+                    <div class="left">
+                        <div class="dropdown">
+                            <div href="notification.html" class="notif-icon" id="dropdownMenuButton"
+                                data-toggle="dropdown" data-number="3">
+                                <img src="img/bell-img.png" alt="">
+                            </div>
+
+                            <div class="dropdown-menu dropdown-notification" aria-labelledby="dropdownMenuButton">
+                                <p class="notif-title">الاشعارات</p>
+                                <div class="notif-items">
+                                    <div class="item">
+                                        <a href="#" class="d-flex anchor-notf">
+                                            <div class="not-hint">
+                                                <img src="img/notification-bing.png">
+                                            </div>
+                                            <div class="text">
+                                                <p> اوامر الشبكة</p>
+                                                <div class="hint-info hint-notf-info">
+                                                    <i class="far fa-clock clock"></i>
+                                                    <span class="hint-text">منذ ساعة</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <button class="remove-not"><i class="fas fa-trash-alt"></i></button>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#" class="d-flex anchor-notf">
+                                            <div class="not-hint">
+                                                <img src="img/notification-bing.png">
+                                            </div>
+                                            <div class="text">
+                                                <p> اوامر الشبكة</p>
+                                                <div class="hint-info hint-notf-info">
+                                                    <i class="far fa-clock clock"></i>
+                                                    <span class="hint-text">منذ ساعة</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <button class="remove-not"><i class="fas fa-trash-alt"></i></button>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#" class="d-flex anchor-notf">
+                                            <div class="not-hint">
+                                                <img src="img/notification-bing.png">
+                                            </div>
+                                            <div class="text">
+                                                <p> اوامر الشبكة</p>
+                                                <div class="hint-info hint-notf-info">
+                                                    <i class="far fa-clock clock"></i>
+                                                    <span class="hint-text">منذ ساعة</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <button class="remove-not"><i class="fas fa-trash-alt"></i></button>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#" class="d-flex anchor-notf">
+                                            <div class="not-hint">
+                                                <img src="img/notification-bing.png">
+                                            </div>
+                                            <div class="text">
+                                                <p> اوامر الشبكة</p>
+                                                <div class="hint-info hint-notf-info">
+                                                    <i class="far fa-clock clock"></i>
+                                                    <span class="hint-text">منذ ساعة</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <button class="remove-not"><i class="fas fa-trash-alt"></i></button>
+                                    </div>
+                                </div>
+                                <a href="notifications.html" class="notif-anchor">الاطلاع علي المزيد</a>
+                            </div>
+                        </div>
+                        <div class="nav-profile dropdown">
+                            <div class="dropdown-profile" id="dropdownMenuButton" data-toggle="dropdown">
+                                <img src="img/img-prof.jpg" alt="" class="prof-img">
+
+                                <p class="hint">
+                                    <span class="first">محمد رمضان</span>
+                                </p>
+                            </div>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item lang-en" href="profile.html">
+                                    <img src="img/profile-img.png" class="hint-img">
+                                    الملف الشخصى
+                                </a>
+                                <a class="dropdown-item lang-en" href="worktime.html">
+                                    <img src="img/time-img.png" class="hint-img">
+                                    اوقات العمل
+                                </a>
+                                <a class="dropdown-item lang-en" href="reviews.html">
+                                    <img src="img/rate-img.png" class="hint-img">
+                                    تقيماتى
+                                </a>
+                                <a class="dropdown-item lang-en" href="login.html">
+                                    <img src="img/logout.png" class="hint-img">
+                                    تسجيل الخروج
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="dropdown lang index-lang">
+                            <button class="auth-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                                <img src="img/ksa-img.png" alt="ksa-img" class="ksa-img">
+                                <span class="text">اللغة العربية</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">
+                                    ar</a>
+                                <a class="dropdown-item" href="#">
+                                    en</a>
+                            </div>
+                        </div>
+
+                        <button class="navbar-btn">
+                            <img src="img/sidmenu-btn.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="with-pt">
+
+            <div class="container">
+
+                <div class="main-text">
+                    <p class="title">إضافة عرض</p>
+                    <p class="disc">العروض _ إضافة عرض</p>
+                </div>
+
+                <div class="layout-card">
+                    <p class="head-title bold">بيانات العرض</p>
+                    <form action="">
+                        <div class="profile-details d-block">
+
+                            <div class="form-group custom-img-upload d-flex justify-content-center mt-4">
+                                <div class="profile-img-upload-2">
+                                    <label for="images_input" class="single-upload">
+                                        <span class="dn-input"></span>
+                                        <img src="img/camera-png.png" alt="camera-img"
+                                        class="camera-img">
+                                        <div>إضافة صورة العرض</div>
+                                    </label>
+                                    <input type="file" id="images_input" accept="image/*" class="hidden-input upload-input">
+                                    <div class="img-preview img d-flex align-items-center profile-shape gap-20">
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="row">
+    
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="" class="label">اسم العرض بالعربية</label>
+                                        <input type="text" class="main-input" placeholder="ادخل الاسم">
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="" class="label">اسم العرض بالانجليزية</label>
+                                        <input type="text" class="main-input" placeholder="ادخل الاسم">
+                                    </div>
+                                </div>
+    
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="" class="label">سعر العرض في المركز</label>
+                                        <input type="number" class="main-input" placeholder="ادخل السعر">
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="" class="label">سعر العرض في المنزل</label>
+                                        <input type="number" class="main-input" placeholder="ادخل السعر">
+                                    </div>
+                                </div>
+
+                                <div class="container">
+
+                                    <!-- first select group for Employees -->
+                                    <div class="form-group select-2-input">
+                                        <label class="label">الموظف / الطبيب المختص بالعرض</label>
+                                        <select class="select" id="employeeSelect">
+                                            <option value="" selected disabled class="disabled">اختر الموظف أو الطبيب</option>
+                                            <option value="1" data-name="Mohamed" data-description="Cardiologist" data-img="img/img-prof.jpg">Mohamed</option>
+                                            <option value="2" data-name="Ahmed" data-description="Dermatologist" data-img="img/upload-img-2.png">Ahmed</option>
+                                            <option value="3" data-name="Ramadan" data-description="Neurologist" data-img="img/pin.png">Ramadan</option>
+                                        </select>
+                                        <div class="cardContainer"></div>
+                                    </div>
+
+                                    <!-- second select group for Services -->
+                                    <div class="form-group select-2-input">
+                                        <label class="label">موظفين الخدمة</label>
+                                        <select class="select" id="serviceSelect">
+                                            <option value="" selected disabled>اختر الخدمات المضافة للعرض</option>
+                                            <option value="4" data-name="Mero" data-description="Full body scan" data-img="img/img-prof.jpg">Mero</option>
+                                            <option value="5" data-name="Amir" data-description="Abdominal ultrasound" data-img="img/upload-img-2.png">Amir</option>
+                                            <option value="6" data-name="Gaber" data-description="Chest X-ray" data-img="img/pin.png">Gaber</option>
+                                        </select>
+                                        <div class="cardContainer"></div>
+                                    </div>
+                                    
+                                    <!-- <div class="col-12 p-0">
+                                        <div class="form-group sel-2-input">
+                                            <label class="label">الخدمات داخل العرض</label>
+                                            <select class="select-plugin service-select" multiple>
+                                                <option value="" selected disabled>اختر الخدمات المضافة للعرض</option>
+                                                <option value="4" data-name="meRo" data-description="Full body scan" data-img="img/img-prof.jpg">Mero</option>
+                                                <option value="5" data-name="amir" data-description="Abdominal ultrasound" data-img="img/upload-img-2.png">amir</option>
+                                                <option value="6" data-name="Gaber" data-description="Chest X-ray" data-img="img/pin.png">test</option>
+                                            </select>
+                                        </div>
+                                        <input type="hidden" class="appended-ids" value="">
+                                        <div class="card-container"></div>
+                                    </div> -->
+                                </div>
+                                
+
+                                <input type="hidden" id="appendedIds" value="">
+                                <div class="col-12">
+                                    <div id="cardContainer"></div>
+                                </div>
+                                
+    
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="" class="label">مدة العرض</label>
+                                        <input type="text" class="main-input input-time" placeholder="ادخل المدة">
+                                    </div>
+                                </div>
+
+                                <input type="hidden" id="appendedIds" value="">
+                                <div class="col-12">
+                                    <div id="cardContainer"></div>
+                                </div>
+
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="" class="label">وصف العرض بالعربية</label>
+                                        <textarea class="main-input text-area"
+                                            placeholder="ادخل الوصف الخاص بالعرض"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="" class="label">وصف العرض بالانجليزية</label>
+                                        <textarea class="main-input text-area"
+                                            placeholder="ادخل الوصف الخاص بالعرض"></textarea>
+                                    </div>
+                                </div>
+    
+                                <!-- remove comment from this div when use edit -->
+    
+                                <!-- <div class="col-12 mb-4">
+                                    <div class="item notf-switch">
+                                        <label for="" class="label">حالة العرض
+                                        </label>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                </div> -->
+    
+                                <div class="col-12">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <button type="button" data-toggle="modal" data-target="#staticBackdrop_4"
+                                            class="custom-btn xl">
+                                            اضافة
+                                        </button>
+                                    </div>
+                                </div>
+    
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- modal -->
+
+        <div class="modal fade accepted-modal" id="staticBackdrop_4" data-backdrop="static" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="modal-details">
+                            <img src="img/check.png" alt="check-img" class="check-img">
+
+                            <p class="main-title text-center">تم إضافة العرض بنجاح</p>
+
+                            <div class="d-flex align-items-center justify-content-center multi-btns mt-4">
+                                <a href="#" class="custom-btn sm">
+                                    تفاصيل العرض
+                                </a>
+                                <a href="offers.html" type="button" class="custom-btn bg-black sm">
+                                    العروض
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ============================ start loader ========================== -->
+        <div class="loader">
+            <img src="img/logo.png" alt="">
+            <span class="load"></span>
+        </div>
+
+    </section>
+    <!--======================== end content ================================-->
+
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-rtl.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/select2.js"></script>
+
+    <!-- this is not a global file -->
+    <script src="js/jquery.fancybox.min.js"></script>
+
+
+    <!-- this is not a global file -->
+    <script src="js/flatpickr.js"></script>
+
+    <!-- this is not a global file (js upload img single and multiple) -->
+    <script src="js/upload-img-script.js"></script>
+
+    <script src="js/main.js"></script>
+
+<!--     
+<script>
+
+// multiple select
+$(document).ready(function() {
+    
+    $('.service-select').on('change', function() {
+        var $select = $(this);
+        var $cardContainer = $select.closest('.col-12').find('.card-container');
+        var $hiddenInput = $select.closest('.col-12').find('.appended-ids');
+
+        var currentIds = $hiddenInput.val() ? $hiddenInput.val().split(',') : [];
+
+        // Get IDs from selected options
+        var selectedIds = [];
+        $select.find('option:selected').each(function() {
+            selectedIds.push($(this).val());
+        });
+
+        // Determine which IDs to add (those not already displayed)
+        var idsToAdd = selectedIds.filter(id => !currentIds.includes(id));
+        // Determine which IDs to remove (those not currently selected but in hidden input)
+        var idsToRemove = currentIds.filter(id => !selectedIds.includes(id));
+
+        // Add new cards
+        idsToAdd.forEach(id => {
+            var option = $select.find(`option[value="${id}"]`);
+            var name = option.data('name');
+            var image = option.data('img');
+            var description = option.data('description');
+
+            var cardHtml = `<div class="card-service" data-value="${id}">
+                                <img src="${image}" alt="${name}" class="service-img">
+                                <div class="info">
+                                    <h6 class="title">${name}</h6>
+                                    <p class="desc">${description}</p>
+                                </div>
+                                <i class="fas fa-times remove-service"></i>
+                                <input type="hidden"name="services[]" value="${[id]}">
+                            </div>`;
+
+            $cardContainer.append(cardHtml);
+            currentIds.push(id);
+        });
+
+        // Remove cards 
+        idsToRemove.forEach(id => {
+            var $card = $cardContainer.find(`.card-service[data-value="${id}"]`);
+            $card.remove();
+            currentIds = currentIds.filter(currentId => currentId !== id);
+        });
+
+        // Update the hidden input with the current IDs
+        $hiddenInput.val(currentIds.join(','));
+    });
+
+    // Bind to click events on dynamically created '.remove-service' icons
+    $(document).on('click', '.remove-service', function() {
+        var $card = $(this).closest('.card-service');
+        var id = $card.data('value');
+        var $container = $card.closest('.card-container');
+        var $hiddenInput = $container.prevAll('.appended-ids').first();
+        var $select = $container.prevAll('.select-2-input, .sel-2-input').find('.service-select');
+
+        // Remove the card from the DOM
+        $card.remove();
+
+        // Update the hidden input after removing a card
+        var appendedIds = $hiddenInput.val().split(',');
+        var index = appendedIds.indexOf(id.toString());
+        if (index > -1) {
+            appendedIds.splice(index, 1);
+            $hiddenInput.val(appendedIds.join(','));
+        }
+
+        // Deselect the option in the select element that corresponds to the removed card
+        $select.find(`option[value="${id}"]`).prop('selected', false);
+        
+        // Trigger the change event on the select to handle any other logic that might need to run
+        $select.trigger('change');
+    });
+});
+
+
+// single select 
+
+$(document).ready(function() {
+    $('#serviceSelect').on('change', function() {
+        var selectedOption = $(this).find('option:selected');
+        var id = selectedOption.val();
+
+        // Clear the existing card before adding a new one
+        $('#cardContainer').empty();
+
+        var name = selectedOption.data('name');
+        var image = selectedOption.data('img');
+        var description = selectedOption.data('description');
+
+        var cardHtml = `<div class="card-service" data-value="${id}">
+                            <img src="${image}" alt="${name}" class="service-img">
+                            <div class="info">
+                                <h6 class="title">${name}</h6>
+                                <p class="desc">${description}</p>
+                            </div>
+                            <i class="fas fa-times remove-service"></i>
+                            <input type="hidden" name="single" value="${id}">
+                        </div>`;
+
+        // Append the new card to the container
+        $('#cardContainer').append(cardHtml);
+    });
+
+    $(document).on('click', '.remove-service', function() {
+        var $card = $(this).closest('.card-service');
+        $card.remove();
+    });
+});
+
+</script> -->
+
+<script>
+    $(document).ready(function() {
+
+        $('.select').on('change', function() {
+            var selectedOption = $(this).find('option:selected');
+            var id = selectedOption.val();
+
+            // if the select is the first group (employee select)
+            var isFirstSelect = $(this).attr('id') === 'employeeSelect';
+
+            // data attributes
+            var name = selectedOption.data('name');
+            var image = selectedOption.data('img');
+            var description = selectedOption.data('description');
+
+            // Conditionally create the hidden input based on the select type
+            var hiddenInput = isFirstSelect ? `<input type="hidden" name="single" value="${id}">`
+                                            : `<input type="hidden" name="service[]" value="${id}">`;
+
+            // create card HTML
+            var cardHtml = `<div class="card-service" data-value="${id}">
+                                <img src="${image}" alt="${name}" class="service-img">
+                                <div class="info">
+                                    <h6 class="title">${name}</h6>
+                                    <p class="desc">${description}</p>
+                                </div>
+                                ${hiddenInput}
+                                <i class="fas fa-times remove-service"></i>
+                            </div>`;
+                            
+
+            if (isFirstSelect) {
+                var container = $(this).closest('.form-group').find('.cardContainer');
+                container.empty();
+                container.append(cardHtml);
+            } else {
+                var appendedIds = $('#appendedIds').val() ? $('#appendedIds').val().split(',') : [];
+                if (!appendedIds.includes(id)) {
+                    $(this).closest('.form-group').find('.cardContainer').append(cardHtml);
+                    appendedIds.push(id);
+                    $('#appendedIds').val(appendedIds.join(','));
+                } else {
+                    alert('This service is already selected.');
+                }
+            }
+
+            // this line to test code in console (to be removed later)
+            $(this).prop('selectedIndex', 0);
+
+            
+        });
+
+        $(document).on('click', '.remove-service', function() {
+            var $card = $(this).closest('.card-service');
+            var id = $card.data('value');
+
+            // remove card 
+            $card.remove();
+
+            
+            if (!$('#employeeSelect').find(`option[value="${id}"]`).length) {
+                var appendedIds = $('#appendedIds').val().split(',');
+
+                // remove id from array
+                var index = appendedIds.indexOf(id.toString());
+                if (index > -1) {
+                    appendedIds.splice(index, 1);
+                    $('#appendedIds').val(appendedIds.join(','));
+                }
+            }
+        });
+    });
+</script>
+    
+</body>
+
+</html>

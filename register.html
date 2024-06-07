@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>register</title>
+    <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/select2.min.css" />
+    <link rel="stylesheet" href="build/css/intlTelInput.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+<body class="">
+
+    <!-- ============================ start content ========================== -->
+    <section class="content">
+        <div class="auth-background default-height">
+            <div class="dropdown lang auth-lang">
+                <button class="auth-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                    <img src="img/ksa-img.png" alt="ksa-img" class="ksa-img">
+                    <span class="text">اللغة العربية</span>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">
+                        ar</a>
+                    <a class="dropdown-item" href="#">
+                        en</a>
+                </div>
+            </div>
+
+            <div class="container">
+                <form class="custom-form custom-layout form-padding custom-form-width position-static" action="register-verify-code.html">
+                    <div class="head-form">
+                        <img src="img/logo.png" alt="logo" class="form-logo">
+                        <p class="main-title">حساب جديد</p>
+                        <p class="main-disc">من فضلك قم بإدخال البيانات التاليه</p>
+                    </div>
+
+                    <div class="form-group custom-img-upload d-flex justify-content-center">
+                        <div class="profile-img-upload-2">
+                            <label for="images_input" class="single-upload">
+                                <span class="dn-input"></span>
+                                <img src="img/camera-png.png" alt="camera-img"
+                                class="camera-img">
+                                <div>إضافة صورة المركز</div>
+                            </label>
+                            <input type="file" id="images_input" accept="image/*" class="hidden-input upload-input">
+                            <div class="img-preview img d-flex align-items-center profile-shape gap-20">
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="" class="label">اسم المركز</label>
+                        <input type="text" class="main-input" placeholder="من فضلك ادخل المركز">
+                    </div>
+                    
+                    <div class="main-tel-input">
+                        <label for="" class="label">رقم الجوال</label>
+                        <div class="form-group main-input mb-4 phone-input">
+                            <input type="number" id="TelInput" value="+966" class="input" placeholder="من فضلك ادخل رقم الجوال">
+                            <span> +966 </span>
+                        </div>
+                    </div>
+
+                    <div class="form-group select-2-input edit-select sec_status">
+                        <label for="" class="label">نوع المركز</label>
+                        <select name="" id="" class="select">
+                            <option value="" selected disabled> اختر نوع المركز</option>
+                            <option value="">مراكز تجميل طبية</option>
+                            <option value="">مشاغل نساء</option>
+                            <option value="">مراكز مساج</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <p class="label">لديك أطباء / موظفين متخصصون بخدمات</p>
+                        <label class="inner-radio">
+                            <input type="radio" class="d-none radio-input" name="name-1" checked="">
+                            <div class="check-inner">
+                                <p class="hint-inner">
+                                    <span class="radio-body"></span>
+                                </p>
+                                <p class="hint-text">
+                                    نعم
+                                </p>
+                            </div>
+                        </label>
+
+                        <label class="inner-radio">
+                            <input type="radio" class="d-none radio-input" name="name-1">
+                            <div class="check-inner">
+                                <p class="hint-inner">
+                                    <span class="radio-body"></span>
+                                </p>
+                                <p class="hint-text">
+                                    لا
+                                </p>
+                            </div>
+                        </label>
+
+                    </div>
+
+                    <div class="form-group select-2-input edit-select sec_status">
+                        <label for="" class="label">المدينة</label>
+                        <select name="" id="" class="select">
+                            <option value="" selected disabled>من فضلك اختر المدينة</option>
+                            <option value="">test</option>
+                            <option value="">test</option>
+                            <option value="">test</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="" class="label">الموقع علي الخريطة</label>
+                        <div class="with_icon main-input">
+                            <input type="text" id="address" class="map-input" data-toggle="modal"
+                                data-target="#staticBackdrop_4" placeholder="ادخل الموقع" readonly>
+                            <img src="img/pin.png" alt="pin-img" class="icon">
+                        </div>
+                    </div>
+
+                    <div class="modal fade accepted-modal without-bg-modal" id="staticBackdrop_4" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                
+                                <div class="map">
+                                    <div class="form-group">
+                                        <input type="text" id="mapSearch" class="main-input">
+                                        <div id="map" class="custom-map"></div>
+                                    </div>
+        
+                                    <input type="hidden" name="lat" id="lat">
+                                    <input type="hidden" name="lng" id="lng">
+        
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="" class="label">السجل التجاري</label>
+                        <input type="number" class="main-input" placeholder="الرجاء إضافة رقم السجل التجاري">
+                    </div>
+
+                    <label for="" class="label text-center">بيانات الحساب البنكي</label>
+
+                    <div class="form-group">
+                        <label for="" class="label">اسم البنك</label>
+                        <input type="text" class="main-input" placeholder="الرجاء إضافة اسم البنك">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="" class="label">اسم صاحب الحساب</label>
+                        <input type="text" class="main-input" placeholder="الرجاء إضافة اسم صاحب الحساب">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="" class="label">رقم الـ IBAN</label>
+                        <input type="number" class="main-input" placeholder="الرجاء إضافة رقم الـ IBAN">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="" class="label">كلمة المرور</label>
+                        <div class="password-group">
+                            <input type="password" class="main-input" placeholder="من فضلك ادخل كلمه المرور">
+                            <i class="far fa-eye icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="" class="label">تأكيد كلمة المرور</label>
+                        <div class="password-group">
+                            <input type="password" class="main-input" placeholder="من فضلك ادخل كلمه المرور">
+                            <i class="far fa-eye icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="form-group custom-img-upload">
+
+                        <label for="images_input_1" class="main-input profile-img-upload-2">
+                            <span class="dn-input"></span>
+                            <img src="img/upload-img-2.png" alt="camera-img"
+                            class="camera-img">
+                        </label>
+                        <input type="file" id="images_input_1" class="hidden-input upload-input" accept="application/pdf,image/*" multiple>
+                        <div class="img-preview img d-flex align-items-center prev-2 gap-20">
+                        </div>
+
+                        <p class="mt-3">إرفاق ملف (السجل التجاري - شهادة ضريبة القيمة المضافة - ...)</p>
+                    </div>
+
+                    <div class="accept-check main-accept">
+                        <label class="check-btn">
+                            <input type="checkbox" class="box-check d-none">
+                            <div class="check-inner">
+                                <span class="span-check"><i class="fas fa-check"></i></span>
+                            </div>
+                        </label>
+                        <span class="hint-inner-text"><a href="terms-and-conditions.html" class="link">قرات ووافقت علي
+                                الشروط والاحكام</a></span>
+                    </div>
+
+                    <button type="submit" class="custom-btn w-100 mt-3 mb-3">
+                        تسجيل
+                    </button>
+                    <span class="new-sign">لديك حساب بالفعل <a href="login.html">تسجيل الدخول</a></span>
+
+
+                    <div class="modal fade accepted-modal without-bg-modal" id="staticBackdrop_4" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                
+                                <div class="map">
+                                    <div class="form-group">
+                                        <input type="text" id="mapSearch" class="main-input">
+                                        <div id="map" class="custom-map"></div>
+                                    </div>
+        
+                                    <input type="hidden" name="lat" id="lat">
+                                    <input type="hidden" name="lng" id="lng">
+        
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- ============================ start loader ========================== -->
+        <div class="loader">
+            <img src="img/logo.png" alt="">
+            <span class="load"></span>
+        </div>
+
+    </section>
+    <!--======================== end content ================================-->
+
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-rtl.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/select2.js"></script>
+
+    <!-- this is not a global file -->
+    <script src="js/jquery.fancybox.min.js"></script>
+
+    <!-- this is not a global file (js upload img single and multiple) -->
+    <script src="js/upload-img-script.js"></script>
+    <script src="build/js/intlTelInput.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script type="text/javascript" src='https://maps.google.com/maps/api/js?language=ar&libraries=places&key=AIzaSyAboccHIj2gkfRleovrCxpYdePLR6ao1EY'></script>
+
+    <script>
+        var map;
+        var marker;
+        var lat = document.getElementById('lat');
+        var lng = document.getElementById('lng');
+        var address = document.getElementById('address');
+        var geocoder = new google.maps.Geocoder();
+        var infowindow = new google.maps.InfoWindow();
+        var myLatlng = new google.maps.LatLng(12.037933, 28.381523);
+        var icon = {
+            url: "img/marker-img.svg", // url
+            scaledSize: new google.maps.Size(50, 50), // scaled size
+            origin: new google.maps.Point(0, 0), // origin
+        };
+        var selectedAddress = "";
+
+        function initMap(latLng) {
+            var myLatlng;
+            if (lat.value === '' || lng.value === '') {
+                myLatlng = latLng;
+            } else {
+                myLatlng = new google.maps.LatLng(lat.value, lng.value)
+            }
+
+            var mapOptions = {
+                zoom: 15,
+                center: myLatlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+
+            map = new google.maps.Map(document.getElementById("map"), mapOptions);
+            marker = new google.maps.Marker({
+                map: map,
+                position: myLatlng,
+                draggable: true,
+                icon: icon
+            });
+
+            geocoder.geocode({ 'latLng': myLatlng }, function (results, status) {
+                if (status == google.maps.GeocoderStatus.OK) {
+                    if (results[0]) {
+                        address.value = results[0].formatted_address;
+                        lat.value = marker.getPosition().lat();
+                        lng.value = marker.getPosition().lng();
+                        infowindow.setContent(results[0].formatted_address);
+                        infowindow.open(map, marker);
+                    }
+                }
+            });
+
+            google.maps.event.addListener(marker, 'dragend', function () {
+                geocoder.geocode({ 'latLng': marker.getPosition() }, function (results, status) {
+                    if (status == google.maps.GeocoderStatus.OK) {
+                        if (results[0]) {
+                            selectedAddress = results[0].address_components[1].long_name;
+                            address.value = results[0].formatted_address;
+                            lat.value = marker.getPosition().lat();
+                            lng.value = marker.getPosition().lng();
+                            infowindow.setContent(results[0].formatted_address);
+                            infowindow.open(map, marker);
+                        }
+                    }
+                });
+            });
+
+            google.maps.event.addListener(map, 'mousedown', function () {
+                $("#mapSearch").val("")
+            });
+
+            google.maps.event.addListener(map, 'mouseup', function (e) {
+                var geocoder = new google.maps.Geocoder();
+                geocoder.geocode({
+                    'latLng': marker.position
+                }, function(results, status) {
+                    if (status == google.maps.GeocoderStatus.OK) {
+                        if (results[0]) {
+                            selectedAddress = results[0].address_components[1].long_name;
+                        }
+                    }
+                });
+            });
+
+
+            const locationButton = document.createElement("button");
+            locationButton.classList.add("custom-map-control-button");
+            map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
+            locationButton.addEventListener("click", () => {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(
+                        (position) => {
+                            const pos = {
+                                lat: position.coords.latitude,
+                                lng: position.coords.longitude,
+                            };
+                            marker.setPosition(pos); // Update marker position
+                            map.setCenter(pos);
+                            geocoder.geocode({'location': pos}, function(results, status) {
+                                if (status === 'OK') {
+                                    if (results[0]) {
+                                        address.value = results[0].formatted_address;
+                                        infowindow.setContent(results[0].formatted_address);
+                                        infowindow.open(map, marker);
+                                        lat.value = pos.lat;
+                                        lng.value = pos.lng;
+                                    } else {
+                                        infowindow.setContent("No results found");
+                                        infowindow.open(map, marker);
+                                    }
+                                } else {
+                                    infowindow.setContent("Geocoder failed due to: " + status);
+                                    infowindow.open(map, marker);
+                                }
+                            });
+                        },
+                        () => {
+                            handleLocationError(true, infowindow, map.getCenter());
+                        }
+                    );
+                } else {
+                    handleLocationError(false, infowindow, map.getCenter());
+                }
+            });
+        
+        }
+
+        function initialize() {
+            var input = document.getElementById('mapSearch');
+            var autocomplete = new google.maps.places.Autocomplete(input, {
+                types: []
+            });
+
+            google.maps.event.addListener(autocomplete, 'place_changed', function () {
+                var place = autocomplete.getPlace();
+                if (!place.geometry) {
+                    return;
+                }
+                lat.value = place.geometry.location.lat();
+                lng.value = place.geometry.location.lng();
+                address.value = place.formatted_address; // Set the selected address here
+                initMap(new google.maps.LatLng(place.geometry.location.lat(), place.geometry.location.lng()));
+            });
+        }
+
+        function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+            infoWindow.setPosition(pos);
+            infoWindow.setContent(
+                browserHasGeolocation
+                    ? "Error: The Geolocation service failed."
+                    : "Error: Your browser doesn't support geolocation."
+            );
+            infoWindow.open(map);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+        if (lat.value !== '' && lng.value !== '') {
+            google.maps.event.addDomListener(window, 'load', initMap);
+        }
+
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function (p) {
+                var LatLng = new google.maps.LatLng(p.coords.latitude, p.coords.longitude);
+                initMap(LatLng)
+            });
+        } else {
+            alert('Geo Location feature is not supported in this browser.');
+        }
+
+        $('#set_address_btn').click(function () {
+            $("#staticBackdrop").modal('hide');
+        });
+
+        $('#staticBackdrop').on('hidden.bs.modal', function () {
+            $('#set_address_btn').prop('disabled', true)
+        });
+    </script>
+
+
+</body>
+
+</html>

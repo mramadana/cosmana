@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>offer-details</title>
+        <link rel="stylesheet" href="css/bootstrap-rtl.min.css" />
+        <link rel="stylesheet" href="css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="css/all.min.css" />
+        <link rel="stylesheet" href="css/animate.css" />
+        <link rel="stylesheet" href="css/select2.min.css" />
+
+        <!-- this is not a global file -->
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body class="">
+        <!--============================== start header ===========================-->
+
+        <div class="sidebar-menu accordion" id="accordionExample">
+            <i class="fal fa-times-circle close-ic"></i>
+            <ul class="sidebar-anchors">
+                <p class="sidebar-hint">عام</p>
+                <li class="item">
+                    <a href="index.html" class="box-item">
+                        <div class="hint-img">
+                            <img
+                                src="img/home-img.png"
+                                alt="home-img"
+                                class="img-1"
+                            />
+                        </div>
+                        <span class="hint"> الرئيسية </span>
+                    </a>
+                    <i class="far fa-angle-left sb-icon"></i>
+                </li>
+
+                <li class="item without-anchor">
+                    <div
+                        class="box-item"
+                        data-toggle="collapse"
+                        data-target="#collapse-1"
+                        aria-expanded="false"
+                    >
+                        <div class="hint-img">
+                            <img
+                                src="img/order-img.png"
+                                alt="order-img"
+                                class="img-1"
+                            />
+                        </div>
+                        <span class="hint"> الطلبات </span>
+                        <i class="far fa-angle-left sb-icon"></i>
+                    </div>
+                    <ul
+                        id="collapse-1"
+                        class="sub-list-menu collapse"
+                        data-parent="#accordionExample"
+                    >
+                        <li class="sub-item">
+                            <a href="orders.html" class="list-anchor">
+                                <p class="sub-text">طلبات جديدة</p>
+                            </a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="orders.html" class="list-anchor">
+                                <p class="sub-text">طلبات حالية</p>
+                            </a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="orders.html" class="list-anchor">
+                                <p class="sub-text">طلبات منتهية</p>
+                            </a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="orders.html" class="list-anchor">
+                                <p class="sub-text">طلبات ملغية / مرفوضة</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <p class="sidebar-hint">خدماتي</p>
+
+                <li class="item">
+                    <a href="services.html" class="box-item">
+                        <div class="hint-img">
+                            <img
+                                src="img/service-img.png"
+                                alt="service-img"
+                                class="img-1"
+                            />
+                        </div>
+                        <span class="hint"> الخدمات </span>
+                    </a>
+                    <i class="far fa-angle-left sb-icon"></i>
+                </li>
+
+                <li class="item">
+                    <a href="offers.html" class="box-item">
+                        <div class="hint-img">
+                            <img
+                                src="img/offers-img.png"
+                                alt="offers-img"
+                                class="img-1"
+                            />
+                        </div>
+                        <span class="hint"> العروض الخاصة </span>
+                    </a>
+                    <i class="far fa-angle-left sb-icon"></i>
+                </li>
+
+                <li class="item">
+                    <a href="center-stories.html" class="box-item">
+                        <div class="hint-img">
+                            <img
+                                src="img/story-img.png"
+                                alt="offers-img"
+                                class="img-1"
+                            />
+                        </div>
+                        <span class="hint"> قصص المركز </span>
+                    </a>
+                    <i class="far fa-angle-left sb-icon"></i>
+                </li>
+
+                <li class="item">
+                    <a href="employees.html" class="box-item">
+                        <div class="hint-img">
+                            <img
+                                src="img/employee-img.png"
+                                alt="users-img"
+                                class="img-1"
+                            />
+                        </div>
+                        <span class="hint"> الموظفين / الأطباء </span>
+                    </a>
+                    <i class="far fa-angle-left sb-icon"></i>
+                </li>
+
+                <p class="sidebar-hint">المالية</p>
+
+                <li class="item without-anchor">
+                    <div
+                        class="box-item"
+                        data-toggle="collapse"
+                        data-target="#collapse-2"
+                        aria-expanded="false"
+                    >
+                        <div class="hint-img">
+                            <img
+                                src="img/receipt-img.png"
+                                alt=""
+                                class="side-img"
+                            />
+                        </div>
+                        <span class="hint"> الحسابات المالية </span>
+                        <i class="far fa-angle-left sb-icon"></i>
+                    </div>
+                    <ul
+                        id="collapse-2"
+                        class="sub-list-menu collapse"
+                        data-parent="#accordionExample"
+                    >
+                        <li class="sub-item">
+                            <a href="transactions.html" class="list-anchor">
+                                <p class="sub-text">المعاملات</p>
+                            </a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="new-settlement-requests.html" class="list-anchor">
+                                <p class="sub-text">طلبات تسوية جديدة</p>
+                            </a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="" class="list-anchor">
+                                <p class="sub-text">طلبات تسوية منتهية</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <p class="sidebar-hint">معلومات</p>
+                <li class="item">
+                    <a href="terms-and-conditions.html" class="box-item">
+                        <div class="hint-img">
+                            <img
+                                src="img/monitor-img.png"
+                                alt=""
+                                class="img-1"
+                            />
+                        </div>
+                        <span class="hint"> الشروط والاحكام </span>
+                    </a>
+                    <i class="far fa-angle-left sb-icon"></i>
+                </li>
+                <li class="item">
+                    <a href="contact-us.html" class="box-item">
+                        <div class="hint-img">
+                            <img
+                                src="img/calling-img.png"
+                                alt=""
+                                class="img-1"
+                            />
+                        </div>
+                        <span class="hint"> تواصل معنا </span>
+                    </a>
+                    <i class="far fa-angle-left sb-icon"></i>
+                </li>
+            </ul>
+        </div>
+
+        <!--============================ end-header ================================-->
+
+        <!-- ============================ start content ========================== -->
+        <section class="content with-mrg">
+            <div class="top-nav">
+                <div class="container">
+                    <div class="main-nav">
+                        <div class="left">
+                            <div class="dropdown">
+                                <div
+                                    href="notification.html"
+                                    class="notif-icon"
+                                    id="dropdownMenuButton"
+                                    data-toggle="dropdown"
+                                    data-number="3"
+                                >
+                                    <img src="img/bell-img.png" alt="" />
+                                </div>
+
+                            <div class="dropdown-menu dropdown-notification" aria-labelledby="dropdownMenuButton">
+                                <p class="notif-title">الاشعارات</p>
+                                <div class="notif-items">
+                                    <div class="item">
+                                        <a href="#" class="d-flex anchor-notf">
+                                            <div class="not-hint">
+                                                <img src="img/notification-bing.png">
+                                            </div>
+                                            <div class="text">
+                                                <p> اوامر الشبكة</p>
+                                                <div class="hint-info hint-notf-info">
+                                                    <i class="far fa-clock clock"></i>
+                                                    <span class="hint-text">منذ ساعة</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <button class="remove-not"><i class="fas fa-trash-alt"></i></button>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#" class="d-flex anchor-notf">
+                                            <div class="not-hint">
+                                                <img src="img/notification-bing.png">
+                                            </div>
+                                            <div class="text">
+                                                <p> اوامر الشبكة</p>
+                                                <div class="hint-info hint-notf-info">
+                                                    <i class="far fa-clock clock"></i>
+                                                    <span class="hint-text">منذ ساعة</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <button class="remove-not"><i class="fas fa-trash-alt"></i></button>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#" class="d-flex anchor-notf">
+                                            <div class="not-hint">
+                                                <img src="img/notification-bing.png">
+                                            </div>
+                                            <div class="text">
+                                                <p> اوامر الشبكة</p>
+                                                <div class="hint-info hint-notf-info">
+                                                    <i class="far fa-clock clock"></i>
+                                                    <span class="hint-text">منذ ساعة</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <button class="remove-not"><i class="fas fa-trash-alt"></i></button>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#" class="d-flex anchor-notf">
+                                            <div class="not-hint">
+                                                <img src="img/notification-bing.png">
+                                            </div>
+                                            <div class="text">
+                                                <p> اوامر الشبكة</p>
+                                                <div class="hint-info hint-notf-info">
+                                                    <i class="far fa-clock clock"></i>
+                                                    <span class="hint-text">منذ ساعة</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <button class="remove-not"><i class="fas fa-trash-alt"></i></button>
+                                    </div>
+                                </div>
+                                <a href="notifications.html" class="notif-anchor">الاطلاع علي المزيد</a>
+                            </div>
+                            </div>
+                            <div class="nav-profile dropdown">
+                                <div
+                                    class="dropdown-profile"
+                                    id="dropdownMenuButton"
+                                    data-toggle="dropdown"
+                                >
+                                    <img
+                                        src="img/img-prof.jpg"
+                                        alt=""
+                                        class="prof-img"
+                                    />
+
+                                    <p class="hint">
+                                        <span class="first">محمد رمضان</span>
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="dropdown-menu"
+                                    aria-labelledby="dropdownMenuButton"
+                                >
+                                    <a
+                                        class="dropdown-item lang-en"
+                                        href="profile.html"
+                                    >
+                                        <img
+                                            src="img/profile-img.png"
+                                            class="hint-img"
+                                        />
+                                        الملف الشخصى
+                                    </a>
+                                    <a
+                                        class="dropdown-item lang-en"
+                                        href="worktime.html"
+                                    >
+                                        <img
+                                            src="img/time-img.png"
+                                            class="hint-img"
+                                        />
+                                        اوقات العمل
+                                    </a>
+                                    <a
+                                        class="dropdown-item lang-en"
+                                        href="reviews.html"
+                                    >
+                                        <img
+                                            src="img/rate-img.png"
+                                            class="hint-img"
+                                        />
+                                        تقيماتى
+                                    </a>
+                                    <a
+                                        class="dropdown-item lang-en"
+                                        href="login.html"
+                                    >
+                                        <img
+                                            src="img/logout.png"
+                                            class="hint-img"
+                                        />
+                                        تسجيل الخروج
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="dropdown lang index-lang">
+                                <button
+                                    class="auth-btn"
+                                    type="button"
+                                    id="dropdownMenuButton"
+                                    data-toggle="dropdown"
+                                >
+                                    <img
+                                        src="img/ksa-img.png"
+                                        alt="ksa-img"
+                                        class="ksa-img"
+                                    />
+                                    <span class="text">اللغة العربية</span>
+                                </button>
+                                <div
+                                    class="dropdown-menu"
+                                    aria-labelledby="dropdownMenuButton"
+                                >
+                                    <a class="dropdown-item" href="#"> ar</a>
+                                    <a class="dropdown-item" href="#"> en</a>
+                                </div>
+                            </div>
+
+                            <button class="navbar-btn">
+                                <img src="img/sidmenu-btn.png" alt="" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="with-pt">
+                <div class="container">
+                    <div class="filter-with-button">
+                        <div class="main-text">
+                            <p class="title">العروض الخاصة / تفاصيل العرض</p>
+                            <p class="disc">
+                                يمكنك الإطلاع علي تفاصيل العرض المضاف من هنا
+                            </p>
+                        </div>
+
+                        <div class="multi-btns d-flex service-detail">
+                            <a href="add-offers.html" class="custom-btn sm">
+                                <i class="far fa-edit icon-plus"></i>
+                                تعديل العرض
+                            </a>
+
+                            <button
+                                type="button"
+                                data-toggle="modal"
+                                data-target="#staticBackdrop_4"
+                                class="custom-btn sm bg-red main-cl trash"
+                            >
+                                <i class="fas fa-trash-alt icon-plus"></i>
+                                حذف العرض
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="layout-card">
+                        <p class="head-title bold">بيانات العرض</p>
+                        <div class="profile-details d-block">
+                            <img
+                                class="service-detail-img"
+                                src="./img/edit_profile_img.png"
+                                alt=""/>
+                            <div class="pb-2">
+                                <b
+                                    ><span>هير روتين + بدي كير</span
+                                    ><span>/ Hair routine + Body Care</span></b
+                                >
+                            </div>
+                            <div class="pb-2 wrap-info">
+                                <p>
+                                    <span>سعر العرض بالمركز :</span
+                                    ><span class="pink-font-color"> 150 ر.س</span>
+                                </p>
+                                <p>
+                                    <span>سعر العرض بالمنزل :</span
+                                    ><span class="pink-font-color"> 150 ر.س</span>
+                                </p>
+                                <p>
+                                    <span>مدة العرض :</span
+                                    ><span class="pink-font-color"> 150 </span>
+                                </p>
+                            </div>
+                            <div class="main-text">
+                                <p class="title">وصف العرض بالعربية:</p>
+                                <p class="disc">
+                                    هذا النص هو نص بديل يمكن ان يستبدل بنص أخر في
+                                    نفس المساحة المخصصة لهذا النص هذا النص هو نص
+                                    بديل يمكن ان يستبدل بنص أخر في نفس المساحة
+                                    المخصصة لهذا النص هذا النص هو نص بديل يمكن ان
+                                    يستبدل بنص أخر في نفس المساحة المخصصة لهذا النص
+                                    هذا النص هو نص بديل يمكن ان يستبدل بنص أخر في
+                                    نفس المساحة المخصصة لهذا النص هذا النص هو نص
+                                    بديل يمكن ان يستبدل بنص أخر في نفس المساحة
+                                    المخصصة لهذا النص هذا النص هو نص بديل يمكن ان
+                                    يستبدل بنص أخر في نفس المساحة المخصصة لهذا النص
+                                </p>
+                            </div>
+                            <div class="main-text">
+                                <p class="title">وصف العرض بالإنجليزية:</p>
+                                <p class="disc">
+                                    This is a dummy text that can be replaced with
+                                    another text in the same space This is a dummy
+                                    text that can be replaced with another text in
+                                    the same space This is a dummy text that can be
+                                    replaced with another text in the same space
+                                    This is a dummy text that can be replaced with
+                                    another text in the same space This is a dummy
+                                    text that can be replaced with another text in
+                                    the same space This is a dummy text that can be
+                                    replaced with another text in the same space
+                                    This is a dummy text that can be replaced with
+                                    another text in the same space
+                                </p>
+                            </div>
+
+                            <div class="main-text mb-0">
+                                <p class="title bold order-details">الخدمات داخل العرض:</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-xl-4 mb-4">
+                                    <a href="#" class="employee order-details">
+                                        <img src="img/default.png" alt="" />
+                                        <div class="info">
+                                            <p> بدكير</p>
+                                            <p>150 ريال</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-md-6 col-xl-4 mb-4">
+                                    <a href="#" class="employee order-details">
+                                        <img src="img/default.png" alt="" />
+                                        <div class="info">
+                                            <p> بدكير</p>
+                                            <p>150 ريال</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-md-6 col-xl-4 mb-4">
+                                    <a href="#" class="employee order-details">
+                                        <img src="img/default.png" alt="" />
+                                        <div class="info">
+                                            <p> بدكير</p>
+                                            <p>150 ريال</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="pb-1">
+                                <p class="font-size-16"> الموظف / الطبيب المختص بالعرض :</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-xl-4 mb-4">
+                                    <a href="#" class="employee order-details">
+                                        <img src="img/default.png" alt="">
+                                        <div class="info">
+                                            <p>د/محمد أشرف</p>
+                                            <p>
+                                                خبير تجميل
+                                            </p>
+                                            <p>
+                                                <i class="fas fa-star active-star"></i>
+                                                <span class="bold order-details">4.5</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- modal-1 -->
+                    <div
+                        class="modal fade accepted-modal"
+                        id="staticBackdrop_4"
+                        data-backdrop="static"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="exampleModalCenterTitle"
+                        aria-hidden="true"
+                    >
+                        <div
+                            class="modal-dialog modal-dialog-centered"
+                            role="document"
+                        >
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <form action="index.html">
+                                        <div class="modal-details">
+                                            <div class="w-100">
+                                                <img
+                                                    class="check-img"
+                                                    src="./img/warning_img.png"
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <p class="main-title text-center">
+                                                هل تريد حقا حذف العرض
+                                            </p>
+                                            <div
+                                                class="d-flex align-items-center justify-content-center multi-btns mt-4"
+                                            >
+                                                <button
+                                                    data-target="#staticBackdrop_5"
+                                                    data-toggle="modal"
+                                                    data-dismiss="modal"
+                                                    aria-label="Close"
+                                                    class="custom-btn sm bg-red"
+                                                >
+                                                    <p class="bt-text">حذف</p>
+                                                </button>
+                                                <button
+                                                    data-dismiss="modal"
+                                                    aria-label="Close"
+                                                    class="custom-btn sm bg-black"
+                                                >
+                                                    <p class="bt-text">تراجع</p>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- modal-2 -->
+                    <div
+                        class="modal fade accepted-modal"
+                        id="staticBackdrop_5"
+                        data-backdrop="static"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="exampleModalCenterTitle"
+                        aria-hidden="true"
+                    >
+                        <div
+                            class="modal-dialog modal-dialog-centered"
+                            role="document"
+                        >
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <form action="index.html">
+                                        <div class="modal-details">
+                                            <div
+                                                class="d-flex justify-content-center"
+                                            >
+                                                <img
+                                                    class="check-img"
+                                                    src="./img/check.png"
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <p class="main-title text-center">
+                                                تم حذف العرض بنجاح
+                                            </p>
+                                            <div
+                                                class="d-flex align-items-center justify-content-center multi-btns mt-4"
+                                            >
+                                                <a href="services.html" class="custom-btn sm">
+                                                    العروض
+                                                </a>
+
+                                                <a href="index.html" class="custom-btn sm bg-black">
+                                                    الرئيسية
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================ start loader ========================== -->
+            <div class="loader">
+                <img src="img/logo.png" alt="" />
+                <span class="load"></span>
+            </div>
+        </section>
+        <!--======================== end content ================================-->
+
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap-rtl.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/wow.js"></script>
+        <script src="js/select2.js"></script>
+
+        <!-- this is not a global file -->
+        <script src="js/jquery.fancybox.min.js"></script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

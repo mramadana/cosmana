@@ -1,0 +1,435 @@
+@import "variables";
+
+.order-details {
+  font-size: 14px;
+}
+
+.custom-btn {
+  &.main-cl {
+    &:hover {
+      .far.fa-edit.icon-plus {
+        color: #ff8471;
+      }
+    }
+  }
+}
+.far.fa-edit.icon-plus {
+  transition: all 0.4s;
+  background-color: #ffffff;
+  color: #f8b6ac;
+  padding: 8px;
+  border-radius: 50%;
+}
+.custom-btn {
+  &.main-cl {
+    &:hover {
+      .fas.fa-trash-alt {
+        color: rgb(255, 34, 0);
+      }
+    }
+  }
+}
+
+.custom-btn.main-cl.sm.trash {
+  background-image: linear-gradient(to top, #ec2f2f, #ec2f2f);
+}
+.employee {
+  display: flex;
+  border: 1px solid #fecfc8;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 15px;
+  justify-content: space-between;
+  img {
+    max-width: 100px;
+    @media (max-width: $screen-xs) {
+       width: 75px;
+    }
+  }
+  .info {
+    flex-grow: 1;
+    padding: 10px;
+    p {
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+    p:first-of-type {
+      font-size: 16px;
+      color: #707070;
+      @media (max-width: $screen-xs) {
+        font-size: 14px;
+      }
+    }
+    p:not(:first-of-type) {
+      font-size: 14px;
+      color: #acacac;
+      @media (max-width: $screen-xs) {
+        font-size: 12px;
+      }
+    }
+    i {
+      color: #efda18;
+    }
+  }
+}
+
+.custom-btn.main-cl.accept {
+  background-image: linear-gradient(to top, #3ba706, #3ba706) !important;
+  span {
+    background-color: #7070706a;
+  }
+}
+
+.layout-card.order-details {
+  border: 2px solid #f8b6aca2;
+  box-shadow: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table-section .table {
+  text-align: start !important;
+  font-weight: bold;
+}
+.table-section tbody::before {
+  content: "" !important;
+}
+.table-section tbody td,
+.table-section tbody th {
+  padding: 0.75rem !important;
+}
+.employee.order-details {
+  background-color: #fff;
+}
+.price.order-details {
+  color: #e99386;
+}
+.bold.order-details {
+  color: #707070 !important;
+}
+.light.order-details {
+  color: #acacac;
+}
+.hr.order-details {
+  height: 1px;
+  background-color: #70707010;
+  margin: 3px 15px;
+}
+.secondary-text {
+  color: #8a8a8a;
+  font-size: 14px;
+  @media (max-width: $screen-xs) {
+    font-size: 12px;
+  }
+}
+
+.service-detail-img {
+  width: 100%;
+  max-height: 220px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+.font-size-14 {
+  font-size: 14px !important;
+}
+.font-size-16 {
+  font-size: 16px !important;
+}
+.font-size-18 {
+  font-size: 18px !important;
+}
+.font-size-14-service-detail {
+  font-size: 14px;
+  color: #949494;
+}
+.pink-color {
+  color: #f5988a;
+  font-size: inherit;
+}
+.employee.order-details.details {
+  padding: 8px 20px;
+}
+
+// -- vars
+$bg-color: #34495e;
+$default-size: 1em;
+$label-font-size: $default-size / 4;
+$label-font-size-redo: $default-size * 4;
+
+// -- mixins
+@mixin size($width, $height) {
+  height: $height;
+  width: $width;
+}
+
+@mixin draw-progress($progress, $color) {
+  .pie {
+    .half-circle {
+      border-color: $color;
+    }
+
+    .left-progress {
+      transform: rotate($progress * 3.6deg);
+    }
+
+    @if $progress <= 50 {
+      .right-progress {
+        display: none;
+      }
+    } @else {
+      clip: rect(auto, auto, auto, auto);
+
+      .right-progress {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+
+
+.set-size {
+  font-size: 10em;
+}
+
+
+.main-title.order-details {
+  text-align: center !important;
+}
+.custom-btn {
+  &.bg-green {
+    background: #3ba706;
+    .bt-text {
+      color: #fff;
+    }
+  }
+  &.bg-red {
+    background: #ec0000;
+    .bt-text {
+      color: #fff;
+    }
+  }
+  &.bg-black {
+    background: #3b3b3b;
+    .bt-text {
+      color: #fff;
+    }
+  }
+}
+
+
+  // start to pie 
+
+  // -- vars
+  $bg-color: #34495e;
+  $default-size: 1em;
+  $label-font-size: $default-size / 4;
+  $label-font-size-redo: $default-size * 4;
+  
+  // -- mixins
+  @mixin size($width, $height) {
+    height: $height;
+    width: $width;
+  }
+  
+  @mixin draw-progress($progress, $color) {
+    .pie {
+      .half-circle {
+        border-color: $color;
+      }
+  
+      .left-progress {
+        transform: rotate($progress * 3.6deg);
+      }
+  
+      @if $progress <= 50 {
+        .right-progress {
+          display: none;
+        }
+      } @else {
+        clip: rect(auto, auto, auto, auto);
+  
+        .right-progress {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+  
+  @mixin draw-progress--solid($progress, $color, $bg-color) {
+    background: linear-gradient(to right, $color 50%, $bg-color 50%);
+  
+    &:before {
+      @if $progress <= 50 {
+        background: $bg-color;
+        transform: rotate((100 - (50 - $progress)) / 100 * 360deg * -1);
+      } @else {
+        background: $color;
+        transform: rotate((100 - $progress) / 100 * 360deg);
+      }
+    }
+  }
+  
+  // -- selectors
+  
+  .set-size {
+    font-size: 6em;
+  }
+  
+  .charts-container {
+    width: fit-content;
+    &:after {
+      clear: both;
+      content: "";
+      display: table;
+    }
+  }
+  
+  .pie-wrapper {
+    @include size($default-size, $default-size);
+    float: right;
+    margin: 15px;
+    position: relative;
+    .left-progress {
+      // display: block;
+      background-image: none;
+    }
+    &:nth-child(3n + 1) {
+      clear: both;
+    }
+  
+    .pie {
+      @include size(100%, 100%);
+      clip: rect(0, $default-size, $default-size, $default-size / 2);
+      left: 0;
+      position: absolute;
+      top: 0;
+  
+      .half-circle {
+        @include size(100%, 100%);
+        border: 0.16em solid #3498db;
+        border-radius: 50%;
+        clip: rect(0, 0.6em, 1em, 0);
+        left: 0;
+        position: absolute;
+        top: 0;
+        z-index: 2;
+      }
+    }
+  
+    .label {
+      border-radius: 50%;
+      font-size: 0.22em;
+      font-weight: 400;
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin-bottom: 0;
+    }
+  
+    .shadow {
+      @include size(100%, 100%);
+      border: 0.1em solid #70707075;
+      border-radius: 50%;
+      transform: scale(0.9);
+    }
+  
+    &.style-2 {
+      .label {
+        background: #707070;
+        color: #ffffff;
+  
+        .smaller {
+          color: #bdc3c7;
+        }
+      }
+    }
+  
+    &.progress-1 {
+      @include draw-progress(33, #f8b6ac);
+    }
+  
+    &.progress-2 {
+      @include draw-progress(66, #f8b6ac);
+    }
+    &.progress-3 {
+      @include draw-progress(100, #f8b6ac !important);
+    }
+  }
+
+  .wrap-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    @media (max-width: $screen-xs) {
+      flex-direction: column;
+       gap: 10px;
+    }
+  }
+
+  .pink-font-color {
+    color: #f5988a;
+    font-size: inherit;
+  }
+
+  .accept-check.transactions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .inner-radio.transactions {
+    margin-inline-end: 25px;
+    .radio-input {
+      &:checked + .check-inner .hint-inner .radio-body {
+        opacity: 1;
+      }
+    }
+    .check-inner {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .hint-inner {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 2px solid #f8b6ac;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+    .radio-body {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #f8b6ac;
+      display: block;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+      opacity: 0;
+      @media (max-width: 550px) {
+        width: 8px;
+        height: 8px;
+      }
+    }
+    .hint-text {
+      color: #000;
+    }
+  }
+
+  .text-red {
+    color: #d21212;
+  }
+  .text-green {
+    color: #3ba706;
+  }
